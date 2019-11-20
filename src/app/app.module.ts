@@ -11,6 +11,7 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { RoutesModule } from './routes/routes.module';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 // https://github.com/ocombe/ng2-translate/issues/218
 export function createTranslateLoader(http: HttpClient) {
@@ -28,6 +29,7 @@ export function createTranslateLoader(http: HttpClient) {
         LayoutModule,
         SharedModule.forRoot(),
         RoutesModule,
+        NgImageSliderModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
